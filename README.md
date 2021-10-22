@@ -15,7 +15,7 @@ This test is done with a Virus TI synthesizer sending program change messages. T
 Test 1:  bluetooth connection
 test 2:  USB connection
 
-## Test 1
+## Test 1 - MIDI over bluetooth
 First it is connected to the Virus with Yamaha wireless MIDI (Bluetooth) Adapter (MD-BT01) 
 the Xcode console shows the following output:
 2021-10-22 22:11:33.812018+0200 Audiokit Sysex test[663:74051] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):238:UMP SYSEX - Start receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):238)
@@ -37,7 +37,7 @@ receivedMIDISystemCommand
 
 
 
-# Test 2
+# Test 2 - MIDI over USB
 Second it is connected to the Virus with Roland MIDI to USB (UM-ONE) and Apple camera adapter 
 
 2021-10-22 22:15:43.579915+0200 Audiokit Sysex test[665:75245] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):246:UMP SYSEX - Continue receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):246)
