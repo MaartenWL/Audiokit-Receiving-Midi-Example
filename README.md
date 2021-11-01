@@ -18,6 +18,7 @@ test 2:  USB connection
 ## Test 1 - MIDI over bluetooth
 First it is connected to the Virus with Yamaha wireless MIDI (Bluetooth) Adapter (MD-BT01) 
 the Xcode console shows the following output:
+```
 2021-10-22 22:11:33.812018+0200 Audiokit Sysex test[663:74051] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):238:UMP SYSEX - Start receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):238)
 2021-10-22 22:11:33.812694+0200 Audiokit Sysex test[663:74051] [midi] MIDI.swift:init():52:Initializing MIDI (MIDI.swift:init():52)
 2021-10-22 22:11:33.821170+0200 Audiokit Sysex test[663:74051] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):246:UMP SYSEX - Continue receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):246)
@@ -34,15 +35,17 @@ receivedMIDISystemCommand
 [240, 0, 32, 51, 1, 16, 115, 64, 1, 0, 247]
 receivedMIDISystemCommand
 [240, 0, 32, 51, 1, 16, 115, 64, 1, 0, 247]
-
+```
 
 
 # Test 2 - MIDI over USB
 Second it is connected to the Virus with Roland MIDI to USB (UM-ONE) and Apple camera adapter 
 
+```
 2021-10-22 22:15:43.579915+0200 Audiokit Sysex test[665:75245] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):246:UMP SYSEX - Continue receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):246)
 2021-10-22 22:15:43.580249+0200 Audiokit Sysex test[665:75245] [midi] MIDI.swift:init():52:Initializing MIDI (MIDI.swift:init():52)
 2021-10-22 22:15:43.584815+0200 Audiokit Sysex test[665:75245] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):246:UMP SYSEX - Continue receiving UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):246)
 2021-10-22 22:15:43.585062+0200 Audiokit Sysex test[665:75245] [midi] MIDI+Receiving.swift:processUMPSysExMessage(with:):252:UMP SYSEX - End of UMP SysEx messages (MIDI+Receiving.swift:processUMPSysExMessage(with:):252)
+```
 
 As you see, there are only logging messages from audiokit itself, but my midilistener functions are not triggered.
